@@ -42,20 +42,18 @@ object Build : BuildType({
     steps {
         maven {
             id = "Maven2"
-            goals = "clean test"
+            goals = "clean package"
             runnerArgs = "-Dmaven.test.failure.ignore=true"
             userSettingsSelection = "settings.xml"
         }
     }
 
     triggers {
-        vcs {
-        }
+        vcs { }
     }
 
     features {
-        perfmon {
-        }
+        perfmon { }
     }
     
     artifactRules = "target/*.jar"
