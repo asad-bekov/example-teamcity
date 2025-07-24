@@ -10,14 +10,14 @@
     <server>
       <id>nexus</id>
       <username>admin</username>
-      <password>Diablo782</password>
+      <password>netolog1</password>
     </server>
   </servers>
   <mirrors>
     <mirror>
       <id>nexus</id>
       <mirrorOf>*</mirrorOf>
-      <url>http://158.160.194.22:8081/repository/maven-public/</url>
+      <url>http://130.193.46.216:8081/repository/maven-releases/</url>
     </mirror>
   </mirrors>
   <profiles>
